@@ -9,6 +9,6 @@ describe ("anagrams_antigrams") do
   end
   it("checks that words can have different cases but still be anagrams") do
     test2 = Input.new("Tea", "Eat")
-    expect(test2.anagram()).to(eq("These are anagrams."))
+    expect(test2.anagram()).to(eq(true))
   end
 end

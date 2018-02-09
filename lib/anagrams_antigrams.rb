@@ -5,10 +5,9 @@ class Input
   end
 
   def anagram
-    array1 = @input1.split(//)
-    array2 = @input2.split(//)
+    array1 = @input1.downcase.split(//)
+    array2 = @input2.downcase.split(//)
 
-    array1.include?(array2)
-    return true
+    array1.any? { |array1| array2.include?(array1) }
   end
 end

@@ -10,10 +10,10 @@ class Input
     vowel_array = ["a", "e", "i", "o", "u", "y"]
 
     if array1.all? { |array1| array2.include?(array1) } == true
-      return "These words are anagrams!"
+      "These words are anagrams!"
     elsif array1.include?(vowel_array) == false || array2.include?(vowel_array) == false
-      return "You need to input an actual word!"
-    else
+      "You need to input an actual word!"
+    elsif
       "These words are not anagrams."
     end
 

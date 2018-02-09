@@ -19,4 +19,8 @@ describe ("anagrams_antigrams") do
     test4 = Input.new("gotten", "class")
     expect(test4.anagram()).to(eq("These words have no letter matches and are antigrams."))
   end
+  it("checks if multiple words are anagrams or antigrams") do
+    test5 = Input.new("dormitory", "dirty room")
+    expect(test5.anagram()).to(eq("These words are anagrams!"))
+  end
 end

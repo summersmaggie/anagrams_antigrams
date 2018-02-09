@@ -11,8 +11,8 @@ describe ("anagrams_antigrams") do
     test2 = Input.new("Tea", "Eat")
     expect(test2.anagram()).to(eq("These words are anagrams!"))
   end
-  it("checks that the input has vowels") do
-    test2 = Input.new("yurb", "ruby")
-    expect(test2.anagram()).to(eq("You need to input actual words!"))
+  it("checks that the input contains at least one vowel") do
+    test3 = Input.new("Tbh", "Tub")
+    expect(test3.anagram()).to(eq("You need to input an actual word!"))
   end
 end

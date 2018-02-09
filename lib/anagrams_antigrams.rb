@@ -8,8 +8,8 @@ class Input
     input1 = @input1.gsub(/\s+/, "")
     input2 = @input2.gsub(/\s+/, "")
 
-    array1 = input1.downcase.split(//)
-    array2 = input2.downcase.split(//)
+    array1 = input1.downcase.split("")
+    array2 = input2.downcase.split("")
 
     if array1.any? { |array1| array2.include?(array1) } == false
       "These words have no letter matches and are antigrams."

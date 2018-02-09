@@ -1,4 +1,4 @@
-# Anagrams and Antigrams: Epicodus Code Review: Week 1
+# Anagrams and Antigrams: Epicodus Code Review: Ruby - Week 1
 
 #### _A application that determines whether two words or phrases are anagrams or antigrams. 2-9-18_
 

@@ -12,11 +12,11 @@ describe ("anagrams_antigrams") do
     expect(test2.anagram()).to(eq("These words are anagrams!"))
   end
   it("checks that the input contains at least one vowel") do
-    test3 = Input.new("Tbh", "Tub")
+    test3 = Input.new("btn", "Button")
     expect(test3.anagram()).to(eq("You need to input an actual word!"))
   end
   it("checks if words have no letters matching, and are antigrams") do
-    test4 = Input.new("hi", "bye")
+    test4 = Input.new("gotten", "class")
     expect(test4.anagram()).to(eq("These words have no letter matches and are antigrams."))
   end
 end

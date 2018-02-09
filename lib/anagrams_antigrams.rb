@@ -11,7 +11,7 @@ class Input
 
     if array1.any? { |array1| array2.include?(array1) } == false
       "These words have no letter matches and are antigrams."
-    elsif array1.all? { |array1| array2.include?(array1) } == true
+    elsif array1.all? { |array1| array2.include?(array1) } == true && array1.length == array2.length
       "These words are anagrams!"
     else array1.include?(vowel_array) == false || array2.include?(vowel_array) == false
       "You need to input an actual word!"

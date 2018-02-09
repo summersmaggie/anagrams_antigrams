@@ -9,7 +9,7 @@ class Input
     array2 = @input2.downcase.split(//)
     vowel_array = ["a", "e", "i", "o", "u", "y"]
 
-    if array1.all? { |array1| array2.include?(array1) } == false
+    if array1.any? { |array1| array2.include?(array1) } == false
       "These words have no letter matches and are antigrams."
     elsif array1.all? { |array1| array2.include?(array1) } == true
       "These words are anagrams!"

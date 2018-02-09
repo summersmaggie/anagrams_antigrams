@@ -10,13 +10,12 @@ class Input
 
     array1 = input1.downcase.split(//)
     array2 = input2.downcase.split(//)
-    vowel_array = ["a", "e", "i", "o", "u", "y"]
 
     if array1.any? { |array1| array2.include?(array1) } == false
       "These words have no letter matches and are antigrams."
     elsif array1.all? { |array1| array2.include?(array1) } == true && array1.length == array2.length
       "These words are anagrams!"
-    elsif array1.include?(vowel_array) == false || array2.include?(vowel_array) == false
+    elsif input1 =~ /[aeiouy]/ || input2 =~ /[aeiouy]/
       "Input an actual word, please!"
     end
   end

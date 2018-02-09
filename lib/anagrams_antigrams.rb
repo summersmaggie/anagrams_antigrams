@@ -9,15 +9,12 @@ class Input
     array2 = @input2.downcase.split(//)
     vowel_array = ["a", "e", "i", "o", "u", "y"]
 
-    if array1.all? { |array1| array2.include?(array1) } == true
+    if array1.all? { |array1| array2.include?(array1) } == false
+      "These words have no letter matches and are antigrams."
+    elsif array1.all? { |array1| array2.include?(array1) } == true
       "These words are anagrams!"
-    elsif array1.include?(vowel_array) == false || array2.include?(vowel_array) == false
+    else array1.include?(vowel_array) == false || array2.include?(vowel_array) == false
       "You need to input an actual word!"
-    elsif
-      "These words are not anagrams."
     end
-
-
-
   end
 end

@@ -27,4 +27,8 @@ describe ("anagrams_antigrams") do
     test6 = Input.new("help", "dirty room")
     expect(test6.anagram()).to(eq("These words have no letter matches and are antigrams."))
   end
+  it("checks if multiple words are words") do
+    test7 = Input.new("drm", "dirty room")
+    expect(test7.anagram()).to(eq("You need to input an actual word!"))
+  end
 end
